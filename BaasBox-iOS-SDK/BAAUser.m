@@ -499,11 +499,12 @@
 
 - (NSString *) username {
   
-  if ([self.visibleByRegisteredUsers[@"_social"] count] > 0) {
-    return self.visibleByTheUser[@"name"];
-  } else {
-    return self.user[@"name"];
-  }
+  // if ([self.visibleByRegisteredUsers[@"_social"] count] > 0) {
+  //   return self.visibleByTheUser[@"name"];
+  // } else {
+  //   return self.user[@"name"];
+  // }
+  return self.user[@"name"];
   
 }
 
